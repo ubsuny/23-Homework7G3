@@ -97,7 +97,7 @@ class Cluster:
         return self.V()
 
 # Initial configuration
-a = 2.5
+a = 2.6
 r_na = np.array([[0, 0, 0], [a/2, a/2, 0], [a/2, 0, a/2], [0, a/2, a/2]])
 r_cl = np.array([[a/2, 0, 0], [0, a/2, 0], [a/2, a/2, a/2], [0, 0, a/2]])
 
