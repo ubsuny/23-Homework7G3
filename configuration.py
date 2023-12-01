@@ -90,3 +90,13 @@ CLUSTER.set_vals(RES.x)
 print("Final optimized cluster positions")
 print(CLUSTER.positions)
 print("Final potential:", RES.fun)
+
+
+
+
+
+
+
+
+
+
