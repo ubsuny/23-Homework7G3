@@ -244,7 +244,7 @@ def cp(l):
 ```
 This function is particularly useful when one needs to efficiently generate pairs of combinations for further analysis or calculations. The `cp` function is designed to generate all unique pairs of combinations from a given list `l` using the `itertools.combinations` function. The function returns a NumPy array containing these combinations.
 
-''' python
+```python
 class Cluster:
     def __init__(self, r_na, r_cl):
         self.positions = np.concatenate( (r_na,r_cl))
@@ -254,7 +254,8 @@ class Cluster:
         self.rij = np.linalg.norm(self.positions[self.combs][:,0] - self.positions[self.combs][:,1], axis=1)
 ```
 
-####Cluster Class Explanation
+
+#### Cluster Class Explanation
 The `Cluster` class is designed to represent a cluster of ions with positive and negative charges. This class is particularly useful for initializing and managing the state of the ion cluster, preparing it for subsequent calculations related to ion interactions. In summary, the Cluster class is an efficient way to organize and initialize the state of an ion cluster. It sets up crucial properties such as ion positions, charges, combinations, charge products, and distances, providing a foundation for subsequent calculations involving interactions within the ion cluster.
 
 #### Initialization Method
@@ -434,7 +435,53 @@ Final potential: -28.23583056299211 eV
 ```
 These results represent the optimized configuration of the NaCl cluster after the optimization process. The total potential energy has been minimized to the final value of -28.23583056299211 eV . The positions are presented both in their 3D format and as a flattened array.
 
-## Configuration obtained:
+### Configuration Obtained:
+![Cubic Configuration of Nacl Tetramer with Binding energy -28.23583056299211 eV](https://github.com/poojashresthacode/23-Homework7G3/blob/Documentation.md/Cubic_Nacl.png)
+
+
+## Initialization for the Tetrahedron:
+
+```python
+r_na = np.array([[0, 0, 0], [0, 0, 2*a], [0, 2*a, -a/2], [0, a, a]])
+r_cl = np.array([[0, 0, a], [0, a, 2*a], [a, a, 0], [a, -a, 0]])
+```
+## Results of tetrahedron Configuration:
+
+```python
+initial Na positions:
+ [[ 0.   0.   0. ]
+ [ 0.   0.   0.4]
+ [ 0.   0.2  0.2]
+ [ 0.   0.4 -0.1]]
+initial Cl positions:
+ [[ 0.   0.   0.2]
+ [ 0.   0.2  0.4]
+ [ 0.2  0.2  0. ]
+ [ 0.2 -0.2  0. ]]
+initial positions flattened shape:
+ [ 0.   0.   0.   0.   0.   0.4  0.   0.2  0.2  0.   0.4 -0.1  0.   0.
+  0.2  0.   0.2  0.4  0.2  0.2  0.   0.2 -0.2  0. ]
+initial V  : -18.417354969091683 eV.
+```
+This information provides an overview of the initial configuration of the NaCl cluster with tetrahedron structure, both in its original 3D representation and as a flattened array. The initial total potential energy indicates the energy associated with this configuration which is -18.417354969091683 eV.
+
+```python
+Final optimized cluster positions
+[[ 0.19421003  0.0042452   0.06015449]
+ [ 0.07512365 -0.27734087  0.25410086]
+ [-0.09468067  0.194785    0.21432129]
+ [ 0.02441364  0.47637688  0.02038706]
+ [-0.01617159 -0.04496002  0.24049382]
+ [-0.15771362  0.43377828  0.17650278]
+ [ 0.11570388  0.24399271  0.03398245]
+ [ 0.25724764 -0.23474607  0.09797901]]
+Final potential: -27.729842282541327 eV.
+```
+The optimized positions of tetrahedron structure  provided correspond to the final configuration of the NaCl cluster following the completion of the optimization procedure. The total potential energy has been minimized, achieving the specified final value of -27.729842282541327 eV. The positions are presented in both their three-dimensional format and as a flattened array.
+
+## Configuration Obtained:
+![Tetrahedron Configuration of Nacl Tetramer with Binding energy -27.729842282541327 eV.](https://github.com/poojashresthacode/23-Homework7G3/blob/Documentation.md/Cubic_Nacl.png)
+
 
 
 
