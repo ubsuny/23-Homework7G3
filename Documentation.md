@@ -41,6 +41,7 @@ These coefficients were derived from crystal data analysis by Tosi and Fumi, as 
    - Among the seven configurations of tetramers of NaCl, I have chosen these two configurations.
      <p align="center">
        <img src="https://github.com/poojashresthacode/23-Homework7G3/assets/143756553/f1ca6f72-aa41-4b76-9919-a761d9769652" alt="Configuration 1" width="400"/>
+        <p align="center">
        <img src="https://github.com/poojashresthacode/23-Homework7G3/assets/143756553/1b7b2d7d-d6f3-40e9-a0bf-a66a8f8fc19e" alt="Configuration 2" width="400"/>
      </p>
 2. **Plot the Equilibrium Configuration :**
