@@ -39,39 +39,30 @@ class Cluster:
     def V(self):
         '''Total potential, which is a sum of the Vij vector'''
         return np.sum(self.Vij())
-
     def get_vals(self):
         '''Positions interpreted as a flat shape'''
         return np.reshape(self.positions, -1)
-
     def set_vals(self, vals ):
         '''Inputs flat shape of positions, used by __call__'''
         self.positions = vals.reshape(self.positions.shape)
         self.rij = np.linalg.norm(self.positions[self.combs][:,0] - self.positions[self.combs][:,1], axis=1)
-
-
     def __call__(self, vals):
         '''Function that  scipy.optimize.minimize will call'''
         self.set_vals(vals)
         return self.V()
-
   # Initial "ideal" configuration for Na4Cl4 tetramer
 a = 0.2
 r_na_ideal = np.array([[0, 0, 0], [a, a, 0], [a, 0, a], [0, a, a]])
 r_cl_ideal = np.array([[a, 0, 0], [0, a, 0], [a, a, a], [0, 0, a]])
-
-
 # Create Cluster instance using ideal positions
 cluster = Cluster(r_na_ideal, r_cl_ideal)
 vals_init = cluster.get_vals()
-
 print('initial Na positions:\n', r_na_ideal)
 print('initial Cl positions:\n', r_cl_ideal)
 print('initial positions flattened shape:\n', vals_init)
 print('initial V  :', cluster.V())
-
 res = scipy.optimize.minimize( fun=cluster, x0=vals_init, tol=1e-3, method="BFGS")
-cluster.set_vals(res.x)  # For some reason, "minimize" is not updating the class at the last iteration
+cluster.set_vals(res.x)  
 print ("Final optimized cluster positions")
 print(cluster.positions)
 print("Final potential:", res.fun)
