@@ -1,6 +1,8 @@
 # Configuration of Nacl Tetramers.
 
-Sodium chloride, table salt, is an ionic crystal with a simple interleaved face-centered cubic structure of the Na and Cl ions. # Binding Energy of a Macroscopic Ionic Crystal
+Sodium chloride, table salt, is an ionic crystal with a simple interleaved face-centered cubic structure of the Na and Cl ions.
+
+# Binding Energy of a Macroscopic Ionic Crystal
 The binding energy of a macroscopic ionic crystal is often represented using the following formulas:
 
 1. Coulomb Energy Form:
