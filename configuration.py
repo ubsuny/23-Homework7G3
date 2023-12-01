@@ -1,7 +1,6 @@
 """
 Module docstring: Provide a brief overview of the module here.
 """
-!pip install numpy scipy
 import itertools
 import numpy as np
 import scipy.optimize
