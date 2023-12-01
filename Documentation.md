@@ -483,9 +483,14 @@ The optimized positions of tetrahedron structure  provided correspond to the fin
 ## Configuration Obtained:
 ![Tetrahedron Configuration of Nacl Tetramer with Binding energy -27.729842282541327 eV.](https://github.com/poojashresthacode/23-Homework7G3/blob/Documentation.md/tetrahedron.png)
 
+## Result of Linting:
+There were various linting errors like not following naming convention, trailing white space, unused import errors which is managed and got the rating of 7.29.
 
-
-
+## Bibliography
+1. https://pubs.aip.org/aapt/ajp/article-abstract/66/3/231/1044856/Evolving-few-ion-clusters-of-Na-and-Cl?redirectedFrom=fulltext
+2. https://github.com/ubsuny/CompPhys/blob/main/MinMax/nacl.ipynb
+3. https://www.sciencedirect.com/science/article/abs/pii/S0921452602015193
+4. https://pubs.aip.org/aip/jcp/article-abstract/67/11/5207/788585/NaCl-polymers
 
 
 
