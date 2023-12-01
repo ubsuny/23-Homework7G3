@@ -480,10 +480,7 @@ Final potential: -27.729842282541327 eV.
 The optimized positions of tetrahedron structure  provided correspond to the final configuration of the NaCl cluster following the completion of the optimization procedure. The total potential energy has been minimized, achieving the specified final value of -27.729842282541327 eV. The positions are presented in both their three-dimensional format and as a flattened array.
 
 ## Configuration Obtained:
-![Tetrahedron Configuration of Nacl Tetramer with Binding energy -27.729842282541327 eV.](https://github.com/poojashresthacode/23-Homework7G3/blob/Documentation.md/Cubic_Nacl.png)
-
-
-
+![Tetrahedron Configuration of Nacl Tetramer with Binding energy -27.729842282541327 eV.](https://github.com/poojashresthacode/23-Homework7G3/blob/Documentation.md/tetrahedron.png)
 
 
 
