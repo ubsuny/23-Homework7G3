@@ -76,43 +76,4 @@ print ("Final optimized cluster positions")
 print(cluster.positions)
 print("Final potential:", res.fun)
 
-%matplotlib inline
 
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-
-charges = cluster.charges
-x, y, z = cluster.positions[:, 0], cluster.positions[:, 1], cluster.positions[:, 2]
-
-# Scatter plot with shading (adjust alpha for transparency)
-scatter = ax.scatter(x, y, z, c=charges, cmap='coolwarm', s=20, alpha=0.6)
-
-# Add a surface plot for background shading
-ax.plot_trisurf(x, y, z, color='gray', alpha=0.1, linewidth=0)
-
-ax.set_xlabel('x')
-ax.set_ylabel('y')
-ax.set_zlabel('z')
-ax.set_title('3D Scatter Plot of Nacl Cubic Configuration')
-
-
-
-# Adjust grid and axes visibility
-ax.grid(True)
-ax.set_axis_on()
-
-# Set background color
-ax.set_facecolor('lightgrey')
-
-# Set specific limits for each axis
-ax.set_xlim([min(x), max(x)])
-ax.set_ylim([min(y), max(y)])
-ax.set_zlim([min(z), max(z)])
-
-# Add legend if needed
-# ax.legend()
-
-# Add annotations or arrows if needed
-# ax.text(x_coord, y_coord, z_coord, 'Annotation')
-
-plt.show()
